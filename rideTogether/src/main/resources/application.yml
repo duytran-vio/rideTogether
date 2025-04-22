@@ -1,0 +1,29 @@
+# application.yml
+
+server:
+  port: 8080  # Port on which the Spring Boot application will run
+
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver  # PostgreSQL JDBC driver
+  jpa:
+    hibernate:
+      ddl-auto: create  # Automatically update the schema based on entity classes
+    show-sql: true  # Show SQL queries in the logs (useful for debugging)
+    properties:
+      hibernate:
+        format_sql: true  # Format SQL queries for better readability in logs
+#  logging:
+#    level:
+#      org.springframework: INFO  # Spring framework logs
+#      org.hibernate: INFO  # Hibernate logs
+#      com.yourpackage: DEBUG  # Replace with your package name for detailed logs
+
+# Custom application properties (optional)
+#app:
+#  jwt:
+#    secret: your_jwt_secret_key  # Replace with a secure secret key for JWT
+#    expiration-ms: 86400000  # JWT expiration time (e.g., 24 hours)

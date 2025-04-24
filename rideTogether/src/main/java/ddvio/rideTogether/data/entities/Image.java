@@ -1,4 +1,4 @@
-package ddvio.rideTogether.entities;
+package ddvio.rideTogether.data.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -11,18 +11,15 @@ import lombok.Setter;
 import java.util.List;
 
 @Entity
-@Table(name = "schools")
+@Table(name = "images")
 @Getter
 @Setter
 @NoArgsConstructor
-public class School extends AuditEntity<Integer> {
+public class Image extends AuditEntity<Integer> {
 
-    @Column(name = "name")
-    private String name;
+    @Column(name = "image_url")
+    private String imageUrl;
 
-    @Column(name = "short_name")
-    private String shortName;
-
-    @OneToMany(mappedBy = "school")
+    @OneToMany(mappedBy = "avatar")
     private List<UserProfile> userProfiles;
 }

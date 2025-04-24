@@ -1,4 +1,4 @@
-package ddvio.rideTogether.entities;
+package ddvio.rideTogether.data.entities;
 
 import java.io.Serializable;
 

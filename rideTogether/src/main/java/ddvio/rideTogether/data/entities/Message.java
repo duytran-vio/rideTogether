@@ -1,4 +1,4 @@
-package ddvio.rideTogether.entities;
+package ddvio.rideTogether.data.entities;
 
 import jakarta.persistence.*;
 import lombok.Getter;

@@ -11,5 +11,6 @@ public class UserCreateRequest {
     private String name;
     private String email;
     private String gender;
-    private String school;
+//    private String school;
+    private String password;
 }

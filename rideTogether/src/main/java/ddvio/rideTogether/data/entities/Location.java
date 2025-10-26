@@ -1,4 +1,4 @@
-package ddvio.rideTogether.entities;
+package ddvio.rideTogether.data.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
